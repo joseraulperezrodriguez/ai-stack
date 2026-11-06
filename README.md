@@ -6,8 +6,8 @@ A tiny GPT built end-to-end — small enough to train in hours on a single consu
 
 | Phase | Status | Notes |
 |---|---|---|
-| 1 — Data & Tokenizer | Not started | Design ready, saved to the bpe-tokenizer-description file |
-| 2 — Model | Not started | 6 layers, 6 heads, 384 dim |
+| 1 — Data & Tokenizer | Done | [bpe-tokenizer](https://github.com/joseraulperezrodriguez/bpe-tokenizer) implemented; data export/splitting is regenerable |
+| 2 — Model | In progress | [gpt-model](https://github.com/joseraulperezrodriguez/gpt-model): 6 layers, 6 heads, 384 dim |
 | 3 — Training Loop | Not started | |
 | 3.5 — Evaluation | Not started | |
 | 4 — Inference | Not started | |
@@ -107,3 +107,4 @@ Local-first for the learning loop; 5c takes it to the web. Design choices in Pha
 
 - [gpu_programming](https://github.com/joseraulperezrodriguez/gpu_programming) — custom CUDA kernels (matmul, attention, layernorm) reused for Phase 2
 - [bpe-tokenizer](https://github.com/joseraulperezrodriguez/bpe-tokenizer) — BPE tokenizer implementation used for Phase 1
+- [gpt-model](https://github.com/joseraulperezrodriguez/gpt-model) — PyTorch GPT decoder implementation for Phase 2
